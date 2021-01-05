@@ -1,0 +1,11 @@
+[
+    {
+    "prompt": "String",
+    "answer": "String",
+    "category": "String",
+    "topic": [
+        ""
+    ],
+    "resource": "String"
+    }
+]

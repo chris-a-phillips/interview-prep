@@ -7,6 +7,8 @@ import Frontend from './components/Frontend/Frontend';
 import Backend from './components/Backend/Backend';
 import Whiteboard from './components/Whiteboard/Whiteboard';
 import New from './components/New/New';
+import CodeChallenge from './components/CodeChallenge/CodeChallenge';
+import Behavioral from './components/Behavioral/Behavioral';
 
 function App() {
   return (
@@ -31,6 +33,14 @@ function App() {
       <Route 
       path='/new'
       exact component={New}
+      />
+      <Route 
+      path='/codechallenge'
+      exact component={CodeChallenge}
+      />
+      <Route 
+      path='/behavioral'
+      exact component={Behavioral}
       />
       </main>
       <footer>
