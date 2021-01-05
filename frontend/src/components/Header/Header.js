@@ -5,8 +5,8 @@ const Header = () => {
     return (
         <header>
             Header
-            <nav>
                 <Link to='/home'>Home</Link>
+            <nav>
                 <Link to='/frontend'>Frontend</Link>
                 <Link to='/backend'>Backend</Link>
                 <Link to='/whiteboard'>Whiteboard</Link>
