@@ -43,13 +43,21 @@ router.patch('/:id', (req, res, next) => {
             example: req.body.prompt,
         },
         { new: true }
-    )
-    .then((question) => {
-        res.json(question)
-    })
-    .catch(next)
+        )
+        .then((question) => {
+            res.json(question)
+        })
+        .catch(next)
 })
 
-
+// delete
+router.delete('/:id', (req, res, next) => {
+    const id = req.params.id;
+    Question.findOneAndRemove({ _id: id })
+        .then((question) => {
+            res.json(question)
+        })
+        .catch(next)
+})
 
 module.exports = router
