@@ -4,6 +4,9 @@ const New = () => {
     return (
         <div>
             New Page
+            <form>
+                <button>Submit</button>
+            </form>
         </div>
     );
 };
