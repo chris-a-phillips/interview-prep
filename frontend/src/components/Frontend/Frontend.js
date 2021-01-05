@@ -12,8 +12,10 @@ const Frontend = () => {
         })
         .then(console.log)
     }, [])
+
     return (
         <div>
+
             Frontend Page
         </div>
     );

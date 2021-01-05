@@ -12,41 +12,24 @@ import Behavioral from './components/Behavioral/Behavioral';
 
 function App() {
   return (
-    <div className="App">
-      <header>
-        <Header />
-      </header>
-      <main>
-      Wassup Planet
-      <Route 
-      path='/whiteboard'
-      exact component={Whiteboard}
-      />
-      <Route 
-      path='/frontend'
-      exact component={Frontend}
-      />
-      <Route 
-      path='/backend'
-      exact component={Backend}
-      />
-      <Route 
-      path='/new'
-      exact component={New}
-      />
-      <Route 
-      path='/codechallenge'
-      exact component={CodeChallenge}
-      />
-      <Route 
-      path='/behavioral'
-      exact component={Behavioral}
-      />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+		<div className='App'>
+			<header>
+				<Header />
+			</header>
+			<main>
+				Wassup Planet
+				<Route path='/whiteboard' exact component={Whiteboard} />
+				<Route path='/frontend' exact component={Frontend} />
+				<Route path='/backend' exact component={Backend} />
+				<Route path='/new' exact component={New} />
+				<Route path='/codechallenge' exact component={CodeChallenge} />
+				<Route path='/behavioral' exact component={Behavioral} />
+
+			</main>
+			<footer>
+				<Footer />
+			</footer>
+		</div>
   );
 }
 
