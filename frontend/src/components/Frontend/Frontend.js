@@ -4,7 +4,7 @@ import axios from 'axios'
 const Frontend = () => {
 
     useEffect(() => {
-        const url = 'http://localhost:8000';
+        const url = 'http://localhost:8000/api/questions';
 
         axios({
             method: 'get',
