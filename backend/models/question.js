@@ -5,7 +5,8 @@ const QuestionSchema = new mongoose.Schema({
     answer: String,
     category: String,
     topic: [String],
-    resource: String
+    resource: String,
+    example: String
 });
 
 const Question = mongoose.model('Question', QuestionSchema);
