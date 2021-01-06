@@ -31,7 +31,7 @@ const New = () => {
     const handleSubmit = (event) => {
         const url = 'http://localhost:8000/api/questions/'
         
-        console.log('submitted')
+        // console.log('submitted')
 
         event.preventDefault()
         axios({
@@ -53,7 +53,7 @@ const New = () => {
         console.log('clicked')
     }
 
-    console.log(message)
+    // console.log(message)
 
     return (
         <div className='New'>

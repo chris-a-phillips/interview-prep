@@ -5,7 +5,9 @@ const Questions = ({ category, filter }) => {
     const [data, setData] = useState()
 
     useEffect(() => {
-        const url = `http://localhost:8000/api/questions/${filter}/${category}`;
+        const url = category!== 'all' 
+        ? `http://localhost:8000/api/questions/${filter}/${category}`
+        : 'http://localhost:8000/api/questions'
 
         axios({
             method: 'get',
@@ -16,7 +18,6 @@ const Questions = ({ category, filter }) => {
             setData(res.data)
         });
     }, [category, filter]);
-
 
     return (
         <div>
