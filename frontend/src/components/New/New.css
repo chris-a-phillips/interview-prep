@@ -1,3 +1,7 @@
+input {
+    display: block;
+}
+
 .modal {
     background-color: aqua;
 }
