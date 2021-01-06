@@ -3,12 +3,7 @@ import { Route } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
-// import Frontend from './components/Frontend/Frontend';
-// import Backend from './components/Backend/Backend';
-// import Whiteboard from './components/Whiteboard/Whiteboard';
 import New from './components/New/New';
-// import CodeChallenge from './components/CodeChallenge/CodeChallenge';
-// import Behavioral from './components/Behavioral/Behavioral';
 import Questions from './components/Questions/Questions';
 
 function App() {
@@ -31,7 +26,6 @@ function App() {
 					}
 				/>
 				Wassup Planet
-				{/* <Route path='/whiteboard' exact component={Whiteboard} /> */}
 				<Route path='/new' exact component={New} />
 			</main>
 			<footer>
