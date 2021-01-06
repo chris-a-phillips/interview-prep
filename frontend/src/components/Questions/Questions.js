@@ -15,7 +15,7 @@ const Questions = ({ category, filter }) => {
             console.log(res)
             setData(res.data)
         });
-    }, []);
+    }, [category, filter]);
 
 
     return (
