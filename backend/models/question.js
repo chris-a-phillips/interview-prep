@@ -4,6 +4,7 @@ const QuestionSchema = new mongoose.Schema({
     prompt: String,
     answer: String,
     category: String,
+    // frontend, backend, whiteboard, behavioral, code-challenge
     topic: [String],
     resource: String,
     example: String
