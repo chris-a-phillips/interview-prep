@@ -1,23 +1,27 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 
-const Questions = ({ category }) => {
+const Questions = ({ category, filter }) => {
+    const [data, setData] = useState()
 
-    console.log(`hello from ${category}`)
+    useEffect(() => {
+        const url = `http://localhost:8000/api/questions/${filter}/${category}`;
 
-        useEffect(() => {
-			const url = 'http://localhost:8000/api/questions';
-
-			axios({
-				method: 'get',
-				url: url,
-			}).then(console.log);
-		}, []);
+        axios({
+            method: 'get',
+            url: url,
+        })
+        .then((res) => {
+            console.log(res)
+            setData(res.data)
+        });
+    }, []);
 
 
     return (
         <div>
             {category}
+            <p>{JSON.stringify(data)}</p>
         </div>
     );
 };

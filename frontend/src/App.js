@@ -7,12 +7,14 @@ import New from './components/New/New';
 import Questions from './components/Questions/Questions';
 
 function App() {
-	const [category, setCategory] = useState('empty string');
+	const [category, setCategory] = useState('empty category');
+	const [filter, setFilter] = useState('empty filter');
+
 
 	return (
 		<div className='App'>
 			<header>
-				<Header category={category} setCategory={setCategory}/>
+				<Header category={category} setCategory={setCategory} filter={filter} setFilter={setFilter}/>
 			</header>
 			<main>
 				<Route
@@ -22,6 +24,7 @@ function App() {
 						() =>
 							<Questions 
 								category={category}
+								filter={filter}
 							/>
 					}
 				/>
