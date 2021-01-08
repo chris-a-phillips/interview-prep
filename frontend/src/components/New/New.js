@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios'
 import './New.css'
+import { APIURL } from '../../config'
 
 const New = () => {
     const [data, setData] = useState({
@@ -29,7 +30,7 @@ const New = () => {
     }
 
     const handleSubmit = (event) => {
-        const url = 'http://localhost:8000/api/questions/'
+        const url = `${APIURL}/api/questions/`
         
         // console.log('submitted')
 

@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
+import ShowPage from '../ShowPage/ShowPage';
+import { Route, Switch } from 'react-router-dom';
+import { APIURL } from '../../config';
+
 
 const Questions = ({ category, filter }) => {
     const [data, setData] = useState()
+    
 
     useEffect(() => {
         const url = category!== 'all' 
-        ? `http://localhost:8000/api/questions/${filter}/${category}`
-        : 'http://localhost:8000/api/questions'
+        ? `${APIURL}/api/questions/${filter}/${category}`
+        : `${APIURL}/api/questions`
 
         axios({
             method: 'get',
@@ -19,12 +24,31 @@ const Questions = ({ category, filter }) => {
         });
     }, [category, filter]);
 
+    if(!data) {
+        return null
+    }
+
     return (
-        <div>
-            {category}
-            <p>{JSON.stringify(data)}</p>
-        </div>
-    );
+		<div>
+			<Switch>
+				<Route exact path={`/questions/${category}`}>
+					{category}
+					{data.map((question) => {
+						return (
+							<div key={question._id}>
+								<h1>{question.prompt}</h1>
+								<p>{question.category}</p>
+								<p>{question.topic}</p>
+							</div>
+						);
+					})}
+				</Route>
+				<Route>
+					<ShowPage />
+				</Route>
+			</Switch>
+		</div>
+	);
 };
 
 export default Questions;
