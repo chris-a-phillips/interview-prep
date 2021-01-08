@@ -30,7 +30,7 @@ const New = () => {
     }
 
     const handleSubmit = (event) => {
-        const url = `${APIURL}/api/questions/`
+        const url = `${APIURL}`
         
         // console.log('submitted')
 

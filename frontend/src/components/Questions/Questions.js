@@ -3,26 +3,28 @@ import axios from 'axios'
 import ShowPage from '../ShowPage/ShowPage';
 import { Route, Switch } from 'react-router-dom';
 import { APIURL } from '../../config';
+import ListPage from '../ListPage/ListPage';
 
 
 const Questions = ({ category, filter }) => {
     const [data, setData] = useState()
-    
+    const [id, setId] = useState()
 
     useEffect(() => {
         const url = category!== 'all' 
-        ? `${APIURL}/api/questions/${filter}/${category}`
-        : `${APIURL}/api/questions`
+        ? `${APIURL}/${filter}/${category}`
+        : `${APIURL}`
 
         axios({
             method: 'get',
             url: url,
         })
         .then((res) => {
-            console.log(res)
+            // console.log(res)
             setData(res.data)
         });
     }, [category, filter]);
+
 
     if(!data) {
         return null
@@ -32,19 +34,13 @@ const Questions = ({ category, filter }) => {
 		<div>
 			<Switch>
 				<Route exact path={`/questions/${category}`}>
-					{category}
-					{data.map((question) => {
-						return (
-							<div key={question._id}>
-								<h1>{question.prompt}</h1>
-								<p>{question.category}</p>
-								<p>{question.topic}</p>
-							</div>
-						);
-					})}
+                    <h1>{category}</h1>
+                    <ListPage data={data} setId={setId}/>
 				</Route>
 				<Route>
-					<ShowPage />
+					<ShowPage exact path={`/questions/${category}/${id}`}
+                    id={id}
+                    />
 				</Route>
 			</Switch>
 		</div>
