@@ -1,6 +1,6 @@
 .Header {
-    margin: 10px;
     text-decoration: none;
+
 }
 
 #navbar {
@@ -13,8 +13,11 @@
     padding: 2px;
     margin: 5px;
     border: solid white 2px;
-    background-color: rgba(0, 0, 0, 0.3);
     display: inline-block;
+}
+
+.list {
+    list-style-type: none;
 }
 
 #home {

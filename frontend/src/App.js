@@ -14,7 +14,7 @@ function App() {
 	return (
 		<div className='App'>
 			<div className='content-container'>
-				<header>
+				<header className='header-container'>
 					<Header
 						category={category}
 						setCategory={setCategory}
@@ -22,19 +22,22 @@ function App() {
 						setFilter={setFilter}
 					/>
 				</header>
-				<main>
+				<main className='page-container'>
+					<div className='searchbar-container'>
+					<h1>Search Bar</h1>
+					</div>
+					<div className='main-container'>
 					<Route
 						// exact
 						path={'/questions'}
 						render={() => (
 							<Questions category={category} filter={filter} />
-						)}
-					/>
-					Wassup Planet
+							)}
+							/>
 					<Route path='/new' exact component={New} />
+							</div>
 				</main>
 			</div>
-
 			<footer>
 				<Footer />
 			</footer>

@@ -16,7 +16,7 @@ const Header = ({ category, setCategory, filter, setFilter }) => {
 				Home
 			</Link>
 			<nav id='navbar'>
-				<ul>
+				<ul id='list'>
 					<li>
 						<Link
 							className='links'
