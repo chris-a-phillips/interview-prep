@@ -25,6 +25,7 @@ function App() {
 				<main className='page-container'>
 					<div className='searchbar-container'>
 					<h1>Search Bar</h1>
+					random question ?
 					</div>
 					<div className='main-container'>
 					<Route

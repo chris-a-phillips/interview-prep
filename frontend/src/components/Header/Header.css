@@ -11,16 +11,18 @@
 .links {
     font-size: 1rem;
     padding: 2px;
-    margin: 5px;
+    margin: 10px;
     border: solid white 2px;
     display: inline-block;
 }
 
-.list {
+ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 #home {
     font-size: 2rem;
-    margin: 10px;
+    margin-bottom: 25px;
 }
