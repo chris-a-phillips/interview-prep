@@ -85,9 +85,23 @@ const New = () => {
 {/* topic */}
                 <input
                 type='text'
-                name='topic'
+                name='topic-one'
                 placeholder='eg. Javascript, Node.js'
-                value={data.topic}
+                value={data.topic[0]}
+                onChange={handleChange}
+                ></input>
+                <input
+                type='text'
+                name='topic-two'
+                placeholder='eg. Javascript, Node.js'
+                value={data.topic[1]}
+                onChange={handleChange}
+                ></input>
+                <input
+                type='text'
+                name='topic-three'
+                placeholder='eg. Javascript, Node.js'
+                value={data.topic[2]}
                 onChange={handleChange}
                 ></input>
                 <label htmlFor='topic'>List of Topics</label>

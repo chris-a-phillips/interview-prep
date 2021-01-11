@@ -13,24 +13,28 @@ function App() {
 
 	return (
 		<div className='App'>
-			<header>
-				<Header category={category} setCategory={setCategory} filter={filter} setFilter={setFilter}/>
-			</header>
-			<main>
-				<Route
-					// exact
-					path={'/questions'}
-					render={
-						() =>
-							<Questions 
-								category={category}
-								filter={filter}
-							/>
-					}
-				/>
-				Wassup Planet
-				<Route path='/new' exact component={New} />
-			</main>
+			<div className='content-container'>
+				<header>
+					<Header
+						category={category}
+						setCategory={setCategory}
+						filter={filter}
+						setFilter={setFilter}
+					/>
+				</header>
+				<main>
+					<Route
+						// exact
+						path={'/questions'}
+						render={() => (
+							<Questions category={category} filter={filter} />
+						)}
+					/>
+					Wassup Planet
+					<Route path='/new' exact component={New} />
+				</main>
+			</div>
+
 			<footer>
 				<Footer />
 			</footer>

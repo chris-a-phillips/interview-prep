@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Route } from 'react-router-dom'
 import axios from 'axios'
 import { APIURL } from '../../config'
 
@@ -16,7 +15,7 @@ const ShowPage = ({ id }) => {
             // console.log(res)
             setData(res.data)
         })
-    }, [])
+    }, [id])
 
     // answer: 'Print and Speech';
 	// category: 'frontend';
@@ -26,6 +25,7 @@ const ShowPage = ({ id }) => {
     // topic: ['CSS'];
 
     
+    
     if (!data) {
         return null
     }
@@ -34,7 +34,9 @@ const ShowPage = ({ id }) => {
         <div>
             ShowPage
             <h1>{data.category}</h1>
-            <h3>{data.topic}</h3>
+            <h3>{data.topic[0]}</h3>
+            <h3>{data.topic[1]}</h3>
+            <h3>{data.topic[2]}</h3>
             <h2>{data.prompt}</h2>
             <h4>{data.answer}</h4>
             <code>{data.example}</code>
