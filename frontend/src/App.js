@@ -39,7 +39,7 @@ function App() {
 							</div>
 				</main>
 			</div>
-			<footer>
+			<footer className='footer'>
 				<Footer />
 			</footer>
 		</div>

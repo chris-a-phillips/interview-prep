@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import { APIURL } from '../../config'
+import './ShowPage.css'
 
 const ShowPage = ({ id }) => {
     const [data, setData] = useState()
@@ -16,15 +17,6 @@ const ShowPage = ({ id }) => {
             setData(res.data)
         })
     }, [id])
-
-    // answer: 'Print and Speech';
-	// category: 'frontend';
-	// example: '';
-	// prompt: 'Can you give an example of an @media property other than screen?';
-	// resource: 'https://www.w3schools.com/css/css_rwd_mediaqueries.asp';
-    // topic: ['CSS'];
-
-    
     
     if (!data) {
         return null
@@ -33,11 +25,14 @@ const ShowPage = ({ id }) => {
     return (
         <div>
             ShowPage
-            <h1>{data.category}</h1>
-            <h3>{data.topic[0]}</h3>
-            <h3>{data.topic[1]}</h3>
-            <h3>{data.topic[2]}</h3>
             <h2>{data.prompt}</h2>
+            {data.topic.map((topic) => {
+                return(
+                    <div className='topics'>
+                        <h3>{topic}</h3>
+                    </div>
+                )
+            })}
             <h4>{data.answer}</h4>
             <code>{data.example}</code>
             <code>```waddup```</code>
