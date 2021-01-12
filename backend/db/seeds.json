@@ -6,7 +6,7 @@
     "topic": [
         "CSS"
     ],
-    "resource": "https://www.w3schools.com/css/css_rwd_mediaqueries.asp",
+    "resource": "https://www.w3schools.com/css/css_rwd_mediaqueries.asp"
     },
     {
     "prompt": "What is the difference between .call and .apply?",
@@ -25,7 +25,7 @@
         "Javascript",
         "CSS"
     ],
-    "resource": "https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript",
+    "resource": "https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript"
     },
     {
         "prompt": "What are some of your strengths",
@@ -85,5 +85,4 @@
     ],
     "resource": "https://medium.com/javascript-in-plain-english/what-the-heck-is-the-virtual-dom-3ef1ae4a950b"
     }
-    
 ]
