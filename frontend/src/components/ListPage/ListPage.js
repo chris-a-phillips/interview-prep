@@ -7,7 +7,7 @@ const ListPage = ({ data, setId }) => {
 		<>
 			{data.map((question) => {
 				return (
-					<div className='question-container'>
+					<div className='question-container' key={question._id}>
 						<Link
 							className='individual-question'
 							onClick={() => setId(question._id)}

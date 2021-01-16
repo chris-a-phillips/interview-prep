@@ -9,7 +9,7 @@ import Questions from './components/Questions/Questions';
 function App() {
 	const [category, setCategory] = useState('empty category');
 	const [filter, setFilter] = useState('empty filter');
-
+	const [search, setSearch] = useState();
 
 	return (
 		<div className='App'>
@@ -24,19 +24,23 @@ function App() {
 				</header>
 				<main className='page-container'>
 					<div className='searchbar-container'>
-					<h1>Search Bar</h1>
-					random question ?
+						<h1>Search Bar</h1>
+						<input type='text'></input>
+						random question
 					</div>
 					<div className='main-container'>
-					<Route
-						// exact
-						path={'/questions'}
-						render={() => (
-							<Questions category={category} filter={filter} />
+						<Route
+							// exact
+							path={'/questions'}
+							render={() => (
+								<Questions
+									category={category}
+									filter={filter}
+								/>
 							)}
-							/>
-					<Route path='/new' exact component={New} />
-							</div>
+						/>
+						<Route path='/new' exact component={New} />
+					</div>
 				</main>
 			</div>
 			<footer className='footer'>

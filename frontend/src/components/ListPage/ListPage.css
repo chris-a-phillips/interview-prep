@@ -1,7 +1,14 @@
 .question-container {
-    margin: 20px;
+	margin: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.question-container:hover {
+    color: black;
 }
 
 .individual-question {
-    text-decoration: none;
+	text-decoration: none;
 }

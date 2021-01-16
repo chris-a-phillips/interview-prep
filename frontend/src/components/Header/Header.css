@@ -1,4 +1,5 @@
 .Header {
+
 }
 
 #navbar {
@@ -14,6 +15,12 @@
     text-decoration: none;
     border-bottom: solid white 1px;
     width: 100%;
+}
+
+.links:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+    border: solid black 1px;
 }
 
 ul {
