@@ -1,4 +1,57 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
+	box-sizing: border-box;
+	margin: 0;
+	color: whitesmoke;
+}
+
+body {
+	background-image: url('./media/images/main-background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	backdrop-filter: blur(2px);
+}
+
+.App {
+	min-height: 100vh
+}
+
+.content-container {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+}
+
+.header-container {
+	margin: 10px;
+}
+
+.page-container {
+}
+
+.main-container {
+	margin: 10px;
+	padding: 20px;
+	background: white;
+	min-height: 75vh;
+	background: linear-gradient(
+		to right bottom,
+		rgba(255, 255, 255, 0.7),
+		rgba(255, 255, 255, 0.3)
+	);
+	border-radius: 10px;
+	z-index: 2;
+	backdrop-filter: blur(2rem);
+}
+
+.searchbar-container {
+	margin: 10px;
+	padding: 10px;
+}
+
+/* .searchbar-container input {
+    display: block;
+    margin: 5px;
+} */
+
+.footer {
+	padding: 10px;
 }

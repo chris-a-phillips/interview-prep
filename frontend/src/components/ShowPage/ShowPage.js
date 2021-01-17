@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Route } from 'react-router-dom'
 import axios from 'axios'
 import { APIURL } from '../../config'
+import './ShowPage.css'
 
 const ShowPage = ({ id }) => {
     const [data, setData] = useState()
 
     useEffect(() => {
-
         axios({
             method: 'get',
             url: `${APIURL}/${id}`,
@@ -16,29 +15,29 @@ const ShowPage = ({ id }) => {
             // console.log(res)
             setData(res.data)
         })
-    }, [])
-
-    // answer: 'Print and Speech';
-	// category: 'frontend';
-	// example: '';
-	// prompt: 'Can you give an example of an @media property other than screen?';
-	// resource: 'https://www.w3schools.com/css/css_rwd_mediaqueries.asp';
-    // topic: ['CSS'];
-
+    }, [id])
     
     if (!data) {
         return null
     }
 
     return (
-        <div>
-            ShowPage
-            <h1>{data.category}</h1>
-            <h3>{data.topic}</h3>
-            <h2>{data.prompt}</h2>
-            <h4>{data.answer}</h4>
+        <div className='ShowPage'>
+            <h1>{data.prompt}</h1>
+            <div id='topic-container'>
+            {data.topics.map((topic) => {
+                return(
+                    <div className='topic' key={topic}>
+                        <h3>{topic}</h3>
+                    </div>
+                )
+            })}
+            </div>
+            <div id='content'>
+            <h3>{data.answer}</h3>
+            <br/>
             <code>{data.example}</code>
-            <code>```waddup```</code>
+            </div>
             <a href={data.resource} target='blank'>Read More About It Here</a>
         </div>
     );

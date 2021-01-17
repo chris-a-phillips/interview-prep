@@ -1,7 +1,41 @@
+#submit {
+    align-items: center;
+    color: black;
+    font-size: 1.5rem;
+}
+
 input {
     display: block;
 }
 
+label {
+    font-size: 1.5rem;
+}
+
 .modal {
     background-color: aqua;
+}
+
+#new-label {
+    font-size: 2.5rem;
+    margin: 15px;
+    text-align: center;
+}
+
+.section {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.textbox {
+    height: 100px;
+    width: 70%;
+    /* margin: auto; */
+}
+
+form {
+    display: block;
+    justify-content: space-around;
 }

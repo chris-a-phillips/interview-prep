@@ -1,0 +1,12 @@
+.question-list {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 12px 5px rgba(0, 0, 0, 0.2);
+}
+
+#category-name {
+    text-transform: capitalize;
+    margin: 10px;
+    text-align: center;
+    font-size: 3rem;
+}
