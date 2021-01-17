@@ -1,7 +1,24 @@
 input {
     display: block;
+    margin: 5px;
+}
+
+label {
+    font-size: 1.5rem;
 }
 
 .modal {
     background-color: aqua;
+}
+
+#new-label {
+    font-size: 2.5rem;
+    margin: 15px;
+    text-align: center;
+}
+
+.section {
+    background-color: teal;
+    margin: 10px;
+    padding: 5px;
 }
