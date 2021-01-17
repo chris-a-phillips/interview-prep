@@ -7,7 +7,6 @@ const ShowPage = ({ id }) => {
     const [data, setData] = useState()
 
     useEffect(() => {
-
         axios({
             method: 'get',
             url: `${APIURL}/${id}`,
@@ -26,9 +25,9 @@ const ShowPage = ({ id }) => {
         <div className='ShowPage'>
             <h1>{data.prompt}</h1>
             <div id='topic-container'>
-            {data.topic.map((topic) => {
+            {data.topics.map((topic) => {
                 return(
-                    <div className='topic'>
+                    <div className='topic' key={topic}>
                         <h3>{topic}</h3>
                     </div>
                 )

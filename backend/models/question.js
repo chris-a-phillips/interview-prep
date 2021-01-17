@@ -2,11 +2,11 @@ const mongoose = require('../db/connection');
 
 const QuestionSchema = new mongoose.Schema({
 	prompt: { type: String, required: true },
-	answer: { type: String, required: true },
-	category: String,
+	answer: String,
+	category: { type: String, required: true },
 	// frontend, backend, whiteboard, behavioral, code-challenge
-	topic: { type: [String], required: true },
-	resource: { type: String, required: true },
+	topics: [String],
+	resource: String,
 	example: String,
 });
 

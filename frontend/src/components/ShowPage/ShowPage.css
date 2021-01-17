@@ -1,23 +1,25 @@
 .ShowPage {
     padding: 10px;
+    filter: contrast(2);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#content {
+    padding: 5px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
 }
 
 #topic-container {
     margin: 10px;
     display: flex;
     justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 5px;
 }
 
 .topic {
     margin: 5px;
     display: inline-block;
-}
-
-#content {
-    padding: 5px;
-    margin: 10px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
 }

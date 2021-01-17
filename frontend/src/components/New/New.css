@@ -29,6 +29,12 @@ label {
     border-radius: 10px;
 }
 
+.textbox {
+    height: 100px;
+    width: 70%;
+    /* margin: auto; */
+}
+
 form {
     display: block;
     justify-content: space-around;

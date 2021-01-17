@@ -1,11 +1,11 @@
 .question-container {
 	margin: 20px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 10px 20px;
 }
 
-.question-container:hover {
+.individual-question:hover {
     color: black;
 }
 

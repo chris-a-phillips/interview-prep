@@ -59,7 +59,7 @@ const New = () => {
 		<div className='New'>
 			<h1 id='new-label'>New Question</h1>
 			{message === true ? (
-				<div className='modal'>
+				<div className={message ? 'success-modal' : 'fail-modal'}>
 					Successfully Submitted/Failed Submission
 				</div>
 			) : null}
@@ -68,6 +68,7 @@ const New = () => {
 				{/* prompt */}
 				<div className='section'>
 					<input
+						class='textbox'
 						type='text'
 						name='prompt'
 						placeholder='Question Prompt'
@@ -79,6 +80,7 @@ const New = () => {
 				<div className='section'>
 					<input
 						type='text'
+						class='textbox'
 						name='answer'
 						placeholder='Question Answer'
 						value={data.answer}
@@ -158,6 +160,7 @@ const New = () => {
 				{/* example */}
 				<div className='section'>
 					<input
+						class='textbox'
 						type='text'
 						name='example'
 						placeholder='Place example here'
@@ -165,7 +168,7 @@ const New = () => {
 						onChange={handleChange}></input>
 					<label htmlFor='example'>Example</label>
 				</div>
-					<button id='submit'>Submit</button>
+				<button id='submit'>Submit</button>
 			</form>
 		</div>
 	);

@@ -3,7 +3,7 @@
     "prompt": "Can you give an example of an @media property other than screen?",
     "answer": "Print and Speech",
     "category": "frontend",
-    "topic": [
+    "topics": [
         "CSS"
     ],
     "resource": "https://www.w3schools.com/css/css_rwd_mediaqueries.asp"
@@ -12,7 +12,7 @@
     "prompt": "What is the difference between .call and .apply?",
     "answer": "The apply() method is identical to call(), except apply() requires an array as the second parameter. The array represents the aruments for the target method.",
     "category": "frontend",
-    "topic": [
+    "topics": [
         "Javascript"
     ],
     "resource": "https://odetocode.com/blogs/scott/archive/2007/07/04/function-apply-and-function-call-in-javascript.aspx"
@@ -21,7 +21,7 @@
     "prompt": "What are some accessiblity concerns that come up in CSS?",
     "answer": "Writing code that is not semantic will cause problems for people that use screen readers and other adaptive technology",
     "category": "frontend",
-    "topic": [
+    "topics": [
         "Javascript",
         "CSS"
     ],
@@ -39,7 +39,7 @@
         "prompt": "What are Globals in Node.js?",
         "answer": "Node. js global objects are global in nature and they are available in all modules. We do not need to include these objects in our application, rather we can use them directly. These objects are modules, functions, strings and object itself as explained below.",
         "category": "backend",
-        "topic": [
+        "topics": [
             "Node.js"
         ],
         "resource": "https://www.tutorialspoint.com/nodejs/nodejs_global_objects.htm#:~:text=Advertisements,object%20itself%20as%20explained%20below."
@@ -48,7 +48,7 @@
         "prompt": "What is a Primary Key? (DB/SQL)",
         "answer": "The PRIMARY KEY constraint uniquely identifies each record in a table. Primary keys must contain UNIQUE values, and cannot contain NULL values. A table can have only ONE primary key; and in the table, this primary key can consist of single or multiple columns (fields).",
         "category": "backend",
-        "topic": [
+        "topics": [
             "Database",
             "SQL"
         ],
@@ -58,7 +58,7 @@
     "prompt": "What is progressive rendering?",
     "answer": "Progressive rendering is when portions of the webpage are being rendered by the server and sent to the client without waiting for the whole page to be rendered",
     "category": "frontend",
-    "topic": [
+    "topics": [
         "HTML",
         "Javascript",
         "Browser"
@@ -69,7 +69,7 @@
     "prompt": "What is the difference between inline, inline-block, and block?",
     "answer": "Inline elements don't start on new lines and occupy just the width it requres and you can't set the width or height. Inline block elements will also not start on a new line, but you can set the width and height values. Block elements will start on a new line, occupy the full width available, and you can set the widht and height values.",
     "category": "frontend",
-    "topic": [
+    "topics": [
         "HTML",
         "CSS"
     ],
@@ -79,7 +79,7 @@
     "prompt": "What is the Virtual DOM?",
     "answer": "The Virtual DOM is a copy of the DOM that is displayed on top the DOM that updates with the power of React",
     "category": "frontend",
-    "topic": [
+    "topics": [
         "Browser",
         "React"
     ],
