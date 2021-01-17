@@ -164,8 +164,8 @@ const New = () => {
 						value={data.example}
 						onChange={handleChange}></input>
 					<label htmlFor='example'>Example</label>
-					<button>Submit</button>
 				</div>
+					<button id='submit'>Submit</button>
 			</form>
 		</div>
 	);

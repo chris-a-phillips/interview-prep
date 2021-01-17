@@ -26,6 +26,7 @@ function App() {
 					<div className='searchbar-container'>
 						<h1>Search Bar</h1>
 						<input type='text'></input>
+						<button>Search</button>
 						random question
 					</div>
 					<div className='main-container'>

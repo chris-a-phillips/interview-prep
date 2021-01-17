@@ -1,6 +1,11 @@
+#submit {
+    align-items: center;
+    color: black;
+    font-size: 1.5rem;
+}
+
 input {
     display: block;
-    margin: 5px;
 }
 
 label {
@@ -18,7 +23,13 @@ label {
 }
 
 .section {
-    background-color: teal;
+    background-color: rgba(0, 0, 0, 0.2);
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form {
+    display: block;
+    justify-content: space-around;
 }

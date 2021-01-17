@@ -23,19 +23,22 @@ const ShowPage = ({ id }) => {
     }
 
     return (
-        <div>
-            ShowPage
-            <h2>{data.prompt}</h2>
+        <div className='ShowPage'>
+            <h1>{data.prompt}</h1>
+            <div id='topic-container'>
             {data.topic.map((topic) => {
                 return(
-                    <div className='topics'>
+                    <div className='topic'>
                         <h3>{topic}</h3>
                     </div>
                 )
             })}
-            <h4>{data.answer}</h4>
+            </div>
+            <div id='content'>
+            <h3>{data.answer}</h3>
+            <br/>
             <code>{data.example}</code>
-            <code>```waddup```</code>
+            </div>
             <a href={data.resource} target='blank'>Read More About It Here</a>
         </div>
     );
