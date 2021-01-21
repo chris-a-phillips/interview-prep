@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer/Footer';
+import Home from './components/Home/Home';
 import Header from './components/Header/Header';
 import New from './components/New/New';
 import Questions from './components/Questions/Questions';
@@ -30,8 +31,8 @@ function App() {
 						random question
 					</div>
 					<div className='main-container'>
+						<Route path='/' exact component={Home} />
 						<Route
-							// exact
 							path={'/questions'}
 							render={() => (
 								<Questions
