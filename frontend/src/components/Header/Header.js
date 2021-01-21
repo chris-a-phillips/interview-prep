@@ -13,7 +13,7 @@ const Header = ({ category, setCategory, filter, setFilter }) => {
 	return (
 		<header className='Header'>
 			<Link className='links' id='home' to='/'>
-				Home
+				IT Home
 			</Link>
 			<nav id='navbar'>
 				<ul id='list'>
