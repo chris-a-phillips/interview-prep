@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <!-- <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
   </a>
 
   <h3 align="center">Interview Trivia</h3>
@@ -52,18 +52,20 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!--[Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-This is a MERN application for testing your knowledge of general concepts based around software engineering.
+<img src="./frontend/src/media/screenshots/show-page.png" alt="Test Screenshot" width="800" height="600">
+    <br/>
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+This is a simple MERN application for testing your knowledge of general concepts based around software engineering.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
+The main functionality includes:
+* Frontend React app styled using basic CSS for a glassmorphism effect
+* Frontend that is connected to backend using axios with functionality to create and read data using RESTful routes
+* Backend Express using Mongoose for schemas to questions
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+This can be used for anyone on their journey in software engineering. Although it was created with the purpose of preparing for interviews, it can be used as a way to do basic trivia. It was created with frontend, backend, behavioral, and whiteboarding questions in mind. It will continue to grow with questions about different topics and more ways to visualize the information.
+
 
 ### Built With
 
@@ -71,7 +73,6 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 * [Express](https://expressjs.com/)
 * [React](https://reactjs.org/)
 * [Node](https://nodejs.org/en/)
-
 
 
 <!-- GETTING STARTED -->
@@ -121,6 +122,6 @@ Contributions are what make the open source community such an amazing place to b
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [Chris Phillips LinkedIn](https://www.linkedin.com/in/chris-a-phillips/) - phillipsachris@gmail.com
+Chris Phillips - [Chris Phillips LinkedIn](https://www.linkedin.com/in/chris-a-phillips/) - phillipsachris@gmail.com
 
 Project Link: [https://github.com/chris-a-phillips/interview-trivia](https://github.com/chris-a-phillips/interview-trivia)
