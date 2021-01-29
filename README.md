@@ -8,7 +8,7 @@
   <h3 align="center">Interview Trivia</h3>
 
   <p align="center">
-    Test yourself
+    Test yourself and see how much you know about basic software engineering concepts.
     <br />
     <a href="https://github.com/chris-a-phillips/interview-trivia/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
